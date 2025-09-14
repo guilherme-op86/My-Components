@@ -1,0 +1,123 @@
+:root{
+    --primary-color: #FF7833;
+    --secondary-color: #31333B;
+    --secondary-color-light: #444856;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    color: #e7e7e7;
+    background-color: #ccc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    line-height: 1.7rem;
+}
+
+h1{
+    font-size: 4rem;
+    color: #7b7b7b;
+    margin: 2.4rem 0 4.8rem;
+}
+
+h2, h3, h4, h5, h6{
+    color: var(--primary-color);
+}
+
+h2{
+    margin-top: 1rem;
+}
+
+.highlight{
+    border-left: 1px solid var(--primary-color);
+    font-size: 1.1em;
+    padding-left: 1em;
+    margin-bottom: 2em;
+}
+
+article{
+    padding-top: 1em; 
+    padding-bottom: 1em;
+    /* esses paddigns estão atrapalhando a formatação dos cards. O professe usou como exemplo para reforçar
+    para nunca usar a tag HTML no css. Sempre utilizar a classe */
+}
+
+.underline{
+    text-decoration: red wavy underline 2px;
+}
+
+.main-header{
+    flex: 0 0 26rem;
+    background-color: var(--secondary-color);   
+}
+
+.main-content{
+    background-color: var(--secondary-color-light);
+    flex: 1 0;
+    padding: 6.5rem 6rem 7.5rem;
+}
+
+a{
+    color: inherit;
+}
+
+.main-header, .main-content{
+    font-size: 1.6rem;
+}
+
+.perfil-img{
+    max-width: 10rem;
+}
+
+ .main-nav{
+    text-align: right;
+    padding: 6.5rem 2.4rem 2.4rem;
+}
+
+.main-nav ul{
+    list-style-type: none;
+    padding: 0;
+} 
+
+.main-nav ul a{
+    display: block;
+    padding: 1.2rem 0;
+    text-decoration: none;
+    background-color: transparent;
+    transition: padding-right .3s, background-color .3s;
+}
+
+.main-nav ul a:hover, 
+.main-nav ul a:focus{
+    background-color: var(--secondary-color-light);
+    padding-right: 1rem;
+}
+
+.main-nav li{
+    border-bottom: 2px solid #7b7b7b;
+    padding: .4rem 0;
+}
+
+.card{
+    max-width: 740px; /* utilizou o tamanho em pixels porque a imagem tem um tamanho máximo em pixels */
+    background-color: var(--secondary-color);
+    padding: 0; /* esse padding está sobrescrevendo o padding do article definido anteriormente */
+}
+
+.card_content{
+    padding: .5rem 1rem 1rem;
+}
+
+.card_content p, .car_title{
+    margin: 0; /* tirou a margem entre os elementos para corrigir o espaçamento defino em .card_content */
+}
+
+.card_title{
+    font-size: 1.5em;
+}
