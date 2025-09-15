@@ -1,0 +1,1 @@
+This project serves as a practical review of the core principles covered in the frontend web development course. Its main objective is to reinforce the semantic structure of HTML and ensure the correct and effective use of CSS attributes. The focus is on writing clean, accessible, and standards-compliant code that reflects best practices in modern web design.
