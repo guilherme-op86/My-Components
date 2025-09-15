@@ -48,6 +48,10 @@ article{
     para nunca usar a tag HTML no css. Sempre utilizar a classe */
 }
 
+section{
+    margin-bottom: 3rem;
+}
+
 .underline{
     text-decoration: red wavy underline 2px;
 }
@@ -121,3 +125,14 @@ a{
 .card_title{
     font-size: 1.5em;
 }
+
+.row{
+    display: flex;
+    gap: 3rem;
+    padding-top: 1.5rem;
+}
+
+.card img{
+    max-width: 100%; /* faz com que a imagem se adapte ao tamanho do container, odebedecendo o tamanho máximo da própria imagem */
+}
+
