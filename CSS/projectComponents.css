@@ -37,15 +37,14 @@ h2{
 .highlight{
     border-left: 1px solid var(--primary-color);
     font-size: 1.1em;
-    padding-left: 1em;
+    padding: 0 0 0 2em; /* definiu este atributo porque o padding do article logo abaixo estava atrpalhando o título highlight */
     margin-bottom: 2em;
 }
 
 article{
     padding-top: 1em; 
     padding-bottom: 1em;
-    /* esses paddigns estão atrapalhando a formatação dos cards. O professe usou como exemplo para reforçar
-    para nunca usar a tag HTML no css. Sempre utilizar a classe */
+    /* esses paddigns estão atrapalhando a formatação dos cards. O professor usou como exemplo para reforçar para nunca usar a tag HTML no css. Sempre utilizar a classe */
 }
 
 section{
@@ -109,21 +108,31 @@ a{
 }
 
 .card{
-    max-width: 740px; /* utilizou o tamanho em pixels porque a imagem tem um tamanho máximo em pixels */
+    max-width: 74rem; /* utilizou o tamanho em pixels porque a imagem tem um tamanho máximo em pixels */
     background-color: var(--secondary-color);
     padding: 0; /* esse padding está sobrescrevendo o padding do article definido anteriormente */
+}
+
+@media (max-width: 74rem) {
+    .row{
+        flex-wrap: wrap;
+    }
+    .card {
+        max-width: 100%;
+    } 
 }
 
 .card_content{
     padding: .5rem 1rem 1rem;
 }
 
-.card_content p, .car_title{
-    margin: 0; /* tirou a margem entre os elementos para corrigir o espaçamento defino em .card_content */
+.card_content p, .card_title{
+    margin: 0; /* tirou a margem entre os elementos para corrigir o espaçamento definido em card_content */
 }
 
 .card_title{
     font-size: 1.5em;
+    margin: .5em 0;
 }
 
 .row{
