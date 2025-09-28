@@ -21,6 +21,10 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
     line-height: 1.7rem;
+    background-image: url(../imagens/ProjetoMyComponents-inicio/imagens/bg-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1{
@@ -60,11 +64,11 @@ section{
 
 .main-header{
     flex: 0 0 26rem;
-    background-color: var(--secondary-color);   
+    background-color: rgba(49, 51, 59, .8);   
 }
 
 .main-content{
-    background-color: var(--secondary-color-light);
+    background-color: rgba(68, 72, 86, .8);
     flex: 1 0;
     padding: 6.5rem 6rem 7.5rem;
 }
@@ -84,6 +88,9 @@ a{
  .main-nav{
     text-align: right;
     padding: 6.5rem 2.4rem 2.4rem;
+    top: 0;
+    left: 0;
+    position: sticky;
 }
 
 .main-nav ul{
@@ -190,7 +197,7 @@ input, label, textarea, select{
 }
 
 input[type = "radio"],
-input[type = "checkbox"]{/* reseta a configuração dos radio, já que acime os inputs foram definidos com display inline-block para que ficassem organizados */
+input[type = "checkbox"]{/* reseta a configuração dos radio, já que acima os inputs foram definidos com display inline-block para que ficassem organizados */
     display: inline;
     width: auto; /* largura dependente do próprio conteúdo */
 }
