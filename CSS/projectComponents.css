@@ -3,7 +3,6 @@
     --secondary-color: #31333B;
     --secondary-color-light: #444856;
     --secondary-color-dark: #23252D;
-
     --default-gap: 3rem;
 }
 
@@ -109,7 +108,7 @@ a{
 .main-nav ul a:hover, 
 .main-nav ul a:focus{
     background-color: var(--secondary-color-light);
-    padding-right: 1rem;
+    padding-right: 1.5rem;
 }
 
 .main-nav li{
@@ -236,7 +235,7 @@ label{
 
 .form-quiz{
     /* width: calc(50% - 1.5rem); */
-    width: calc(50% - (var(--default-gap)/2)); /*subtrai do width de 50%  1.5 rem que é metade do gap da classe row. Assim, o form-quiz fica com o tamanho exato da metade da div row que segura o formuláriod e contato */
+    width: calc(50% - (var(--default-gap)/2)); /*subtrai do width de 50%  1.5 rem que é metade do gap da classe row. Assim, o form-quiz fica com o tamanho exato da metade da div row que segura o formulário de contato */
 }
 
 .btn-stroke{
@@ -295,5 +294,44 @@ table th:last-child{
 .table-verticalLines th:not(:last-child){
     border-right: 1px solid var(--secondary-color-dark);
 }
+
+.table-verticalLines tbody tr:nth-child(odd){
+    background-color: var(--secondary-color);   
+}
+
+.fa-brands{
+    font-size: 5rem;
+}
+
+.fa-brands:hover{
+    color: var(--primary-color);
+}
+
+.general-container{
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+
+}
+
+.address-container{
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+    align-items: baseline;
+}
+
+.icon-link{
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.address-container:hover{
+    color: var(--primary-color);
+}
+
+
 
 
